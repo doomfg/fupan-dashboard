@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>小艺 Work · 每日复盘工作台</title>
+<style>
+  :root{
+    --bg:#f5f7fa; --card:#ffffff; --ink:#1f2430; --sub:#6b7280;
+    --line:#e5e7eb; --accent:#2563eb; --red:#dc2626; --green:#16a34a;
+    --chip:#eef2ff; --chip-ink:#4338ca;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);padding-bottom:48px}
+  header{background:linear-gradient(135deg,#1e3a8a,#2563eb);color:#fff;padding:20px 18px 16px;position:sticky;top:0;z-index:10;box-shadow:0 2px 12px rgba(0,0,0,.08)}
+  header .brand{display:flex;align-items:center;gap:10px}
+  header .logo{width:34px;height:34px;border-radius:9px;background:rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center;font-size:19px}
+  header h1{font-size:17px;font-weight:600;letter-spacing:.3px}
+  header .sub{font-size:12px;opacity:.85;margin-top:3px}
+  .chips-wrap{background:var(--card);border-bottom:1px solid var(--line);padding:10px 14px;position:sticky;top:70px;z-index:9;display:flex;align-items:center;gap:8px}
+  #dates{flex:1;max-width:300px;padding:10px 13px;border:1px solid var(--line);border-radius:10px;font-size:14px;background:#fff;color:var(--ink);cursor:pointer}
+  #dates:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
+  main{max-width:760px;margin:0 auto;padding:16px 14px}
+  .dayhead{display:flex;align-items:baseline;gap:10px;padding:4px 2px 12px}
+  .dayhead .d{font-size:16px;font-weight:600}
+  .dayhead .c{font-size:12px;color:var(--sub)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:14px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.03)}
+  .card .hd{display:flex;align-items:center;gap:8px;padding:12px 16px;border-bottom:1px solid var(--line);font-weight:600;font-size:14px}
+  .card .hd .em{font-size:16px}
+  .card .bd{padding:14px 16px;font-size:13.5px;line-height:1.75;color:#2b3445}
+  .card .bd h3{font-size:15px;margin:8px 0 6px;color:#111827}
+  .card .bd h4{font-size:13.5px;margin:10px 0 4px}
+  .card .bd p{margin:5px 0}
+  .card .bd li{margin:3px 0;padding-left:16px;position:relative}
+  .card .bd li:before{content:"·";position:absolute;left:4px;color:var(--accent)}
+  .card .bd table{border-collapse:collapse;width:100%;margin:8px 0;font-size:12.5px}
+  .card .bd th,.card .bd td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+  .card .bd th{background:#f8fafc;font-weight:600}
+  .card .bd code{background:#f1f5f9;padding:1px 5px;border-radius:4px;font-size:12px}
+  .card .bd .q{color:var(--sub);font-size:12px}
+  .empty{padding:40px 0;text-align:center;color:var(--sub);font-size:13px}
+  footer{text-align:center;color:var(--sub);font-size:11px;padding:20px;line-height:1.8}
+  .pill{display:inline-block;font-size:10.5px;padding:1px 8px;border-radius:10px;margin-left:6px;vertical-align:middle}
+  .pill.r{background:#fee2e2;color:#b91c1c}
+  .pill.g{background:#dcfce7;color:#15803d}
+  .pill.b{background:#dbeafe;color:#1d4ed8}
+  @media(max-width:480px){header{padding:14px 14px 12px}header h1{font-size:15px}.card .bd{font-size:13px;padding:12px 14px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand"><div class="logo">🐾</div><div><h1>小艺 Work · 每日复盘工作台</h1><div class="sub">5标的震荡复盘 · 中美流动性监测</div></div></div>
+</header>
+<div class="chips-wrap"><span style="font-size:12px;color:var(--sub);flex:0 0 auto">切换日期</span><select id="dates" title="切换日期"></select></div>
+<main id="main"><div class="empty">加载中…</div></main>
+<footer>数据源：同花顺问财 / 央行公开市场 / 美联储(纽约联储) / 联网核验<br>技术参考，不构成投资建议</footer>
+
+<script>
+let IDX=null, cur=null;
+const LBL={
+  'reviews':{name:'5标的震荡复盘',em:'📊',cls:'b'},
+  'liquidity-cn':{name:'中国流动性',em:'🇨🇳',cls:'g'},
+  'liquidity-us':{name:'美国流动性/信用风险',em:'🗽',cls:'r'}
+};
+const ORDER=['reviews','liquidity-us','liquidity-cn'];
+
+async function init(){
+  try{ IDX=await (await fetch('index.json')).json(); }
+  catch(e){ document.getElementById('main').innerHTML='<div class="empty">数据加载失败</div>'; return; }
+  cur=IDX.dates[0];
+  renderChips();
+  select(cur);
+}
+function renderChips(){
+  const sel=document.getElementById('dates');
+  sel.innerHTML='';
+  IDX.dates.forEach(dt=>{
+    const tags=[];
+    if(IDX.files.reviews[dt])tags.push('复盘');
+    if(IDX.files['liquidity-cn'][dt])tags.push('中国');
+    if(IDX.files['liquidity-us'][dt])tags.push('美国');
+    const o=document.createElement('option');
+    o.value=dt;
+    o.textContent=dt+' ｜ '+(tags.length?tags.join('/'):'无');
+    sel.appendChild(o);
+  });
+  sel.value=cur;
+  sel.onchange=()=>select(sel.value);
+}
+async function select(dt){
+  cur=dt;
+  const sel=document.getElementById('dates'); if(sel) sel.value=dt;
+  const main=document.getElementById('main');
+  main.innerHTML='<div class="empty">加载中…</div>';
+  const parts=dt.split('-');
+  const weekday=new Date(parts[0],parts[1]-1,parts[2]).getDay();
+  const wd=['日','一','二','三','四','五','六'][weekday];
+  let html=`<div class="dayhead"><span class="d">${dt} · 周${wd}</span><span class="c">${countTag(dt)}</span></div>`;
+  for(const k of ORDER){
+    const f=IDX.files[k]&&IDX.files[k][dt];
+    if(!f)continue;
+    const L=LBL[k];
+    html+=`<div class="card"><div class="hd"><span class="em">${L.em}</span>${L.name}<span class="pill ${L.cls}">${k==='reviews'?'日度':'监测'}</span></div><div class="bd" id="bd-${k}-${dt}">加载中…</div></div>`;
+  }
+  if(!IDX.files.reviews[dt]&&!IDX.files['liquidity-cn'][dt]&&!IDX.files['liquidity-us'][dt])html+='<div class="empty">该日无简报</div>';
+  main.innerHTML=html;
+  // fetch contents
+  for(const k of ORDER){
+    const f=IDX.files[k]&&IDX.files[k][dt];
+    if(!f)continue;
+    (async()=>{
+      try{
+        const t=await (await fetch(f)).text();
+        const bd=document.getElementById(`bd-${k}-${dt}`);
+        if(bd)bd.innerHTML=md2html(t);
+      }catch(e){ const bd=document.getElementById(`bd-${k}-${dt}`); if(bd)bd.textContent='加载失败'; }
+    })();
+  }
+  document.querySelector('.chips-wrap').scrollIntoView({behavior:'smooth',block:'start'});
+}
+function countTag(dt){
+  let n=0; ORDER.forEach(k=>{if(IDX.files[k]&&IDX.files[k][dt])n++;});
+  return n>0?`${n} 份简报`:'';
+}
+function md2html(t){
+  const rawlines=t.replace(/^\uFEFF/,'').replace(/\r/g,'').split('\n');
+  let html='', inTable=false;
+  const inline=s=>s
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+    .replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
+    .replace(/`([^`]+)`/g,'<code>$1</code>')
+    .replace(/\[(.+?)\]\((.+?)\)/g,'<a href="$2" target="_blank">$1</a>');
+  for(let i=0;i<rawlines.length;i++){
+    let ln=rawlines[i];
+    if(/^\s*#+\s+/.test(ln)){ html+='<h3>'+inline(ln.replace(/^\s*#+\s+/,''))+'</h3>'; continue; }
+    if(/^\s*-\s+/.test(ln)){ html+='<li>'+inline(ln.replace(/^\s*-\s+/,''))+'</li>'; continue; }
+    if(/^\s*>\s+/.test(ln)){ html+='<p class="q">'+inline(ln.replace(/^\s*>\s*/,''))+'</p>'; continue; }
+    if(/^\s*\|.*\|\s*$/.test(ln)){
+      const isSep=/^\s*\|?\s*:?-+:?\s*\|(\s*:?-+:?\s*\|)*\s*$/.test(ln);
+      if(!inTable && !isSep){ inTable=true; html+='<table>'; }
+      if(isSep) continue;
+      if(inTable){
+        const cells=ln.replace(/^\s*\|\s*/,'').replace(/\s*\|\s*$/,'').split(/\s*\|\s*/);
+        html+='<tr>'+cells.map(c=>`<${i===0?('td'):'td'}>`+inline(c)+'</td>').join('')+'</tr>';
+        if(!/^\s*\|.*\|\s*$/.test(rawlines[i+1]||'')){ html+='</table>'; inTable=false; }
+      }
+      continue;
+    }
+    if(inTable && !/^\s*\|/.test(ln)){ html+='</table>'; inTable=false; }
+    if(ln.trim()===''){ html+='<br>'; continue; }
+    html+='<p>'+inline(ln)+'</p>';
+  }
+  if(inTable) html+='</table>';
+  return html;
+}
+init();
+</script>
+</body>
+</html>
