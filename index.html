@@ -65,7 +65,7 @@ const LBL={
 const ORDER=['reviews','liquidity-us','liquidity-cn'];
 
 async function init(){
-  try{ IDX=await (await fetch('index.json')).json(); }
+  try{ IDX=await (await fetch('index.json?t='+Date.now())).json(); }
   catch(e){ document.getElementById('main').innerHTML='<div class="empty">数据加载失败</div>'; return; }
   cur=IDX.dates[0];
   renderChips();
@@ -110,7 +110,7 @@ async function select(dt){
     if(!f)continue;
     (async()=>{
       try{
-        const t=await (await fetch(f)).text();
+        const t=await (await fetch(f+'?t='+Date.now())).text();
         const bd=document.getElementById(`bd-${k}-${dt}`);
         if(bd)bd.innerHTML=md2html(t);
       }catch(e){ const bd=document.getElementById(`bd-${k}-${dt}`); if(bd)bd.textContent='加载失败'; }
