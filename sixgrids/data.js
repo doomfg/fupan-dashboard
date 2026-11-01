@@ -1,7 +1,7 @@
 // 六张网项目追踪数据（初始数据：2026-10-23 采集自公开招标/公告/新闻，来源均已标注）
 // 更新方式：新增对象到对应 networks[].projects
 var LIUZHANGWANG_DATA = {
-  "updated": "2026-10-25",
+  "updated": "2026-11-01",
   "note": "数据为公开渠道采集的代表性项目，非完整清单；状态与金额以公告为准",
   "networks": [
     {
@@ -44,6 +44,15 @@ var LIUZHANGWANG_DATA = {
           "amount": "约1.099亿元", "date": "2026-10",
           "detail": "准东将军庙兵准供水工程总承包，总工期233日历天，计划2026-10-10开工、2027-05-30完工，保障兵团与准东区域供水。",
           "source": "新疆维吾尔自治区水利厅", "url": "https://slt.xinjiang.gov.cn/xjslt/c114436/202609/fe42d26d58094f10893e0fbbe875bf52.shtml"
+        },
+        {
+          "name": "黑河象山水库除险加固工程（一标段）",
+          "province": "黑龙江省", "city": "黑河",
+          "status": "中标候选人公示（2026-10-30）",
+          "companyRole": "中标候选人（第一名）", "company": "福建省水利水电工程局有限公司",
+          "amount": "约1.585亿元（158476923.75元）", "date": "2026-10",
+          "detail": "评标于2026-10-30完成并公示（公示期3日），第一中标候选人福建水利水电工程局报价约1.58亿元，保障水库除险加固与供水安全。",
+          "source": "黑龙江省公共资源交易网", "url": "https://ggzyjyw.hlj.gov.cn/jyfwdt/003002/003002001/003002001002/20261030/25d318d7-fcef-4943-8b22-dfca18a4673b.html"
         }
       ]
     },
@@ -96,6 +105,15 @@ var LIUZHANGWANG_DATA = {
           "amount": "约6.34亿元", "date": "2026-09",
           "detail": "变电设备（含电缆）电缆及附件5个包+导地线4个包；子公司焦作汉河电缆另中标2个包，约占2025年营收6.09%。",
           "source": "新浪财经", "url": "https://finance.sina.com.cn/stock/aigc/zdht/2026-09-08/doc-inircews9272508.shtml"
+        },
+        {
+          "name": "攀西特高压变电站新建工程（1000kV现场组装变压器）",
+          "province": "四川省·攀西", "city": "",
+          "status": "设备中标（2026-09-29公告）",
+          "companyRole": "中标供应商", "company": "保变电气",
+          "amount": "", "date": "2026-09",
+          "detail": "国家电网2026年特高压项目第四次设备公开招标，保变电气中标攀西特高压变电站新建工程10台1000千伏特高压现场组装变压器供货。",
+          "source": "机经网（中国机械工业联合会）", "url": "https://www.mei.net.cn/dgdq/202610/639695508205508501.html"
         }
       ]
     },
@@ -148,6 +166,15 @@ var LIUZHANGWANG_DATA = {
           "amount": "总投资24.75亿元", "date": "2026-10",
           "detail": "建设算力中心、动力中心、运维楼及配套设施，IT负荷82.5MW（3.3万标准机架），起止年限2026-10至2028-06。",
           "source": "网易（云头条）", "url": "https://www.163.com/dy/article/L9A4R0QE0511D6RL.html"
+        },
+        {
+          "name": "中国移动2026-2027年新一代人工智能超节点设备集中采购",
+          "province": "全国", "city": "",
+          "status": "中标候选人公示（2026-10-28）",
+          "companyRole": "中标供应商（5家）", "company": "四川华鲲振宇（117.02亿元/6144卡）、宝德计算机（115.99亿/5120卡）、浙江华启智慧（116.38亿/4096卡）、百信信息、北京神州鲲泰",
+          "amount": "投标报价最高117.02亿元", "date": "2026-10",
+          "detail": "合计采购人工智能超节点20480卡及配套RoCE交换机448台、存储82套，支撑运营商算力基础设施扩容。",
+          "source": "新浪财经（上证报）", "url": "https://finance.sina.com.cn/roll/2026-10-29/doc-iniwwpnu6095322.shtml"
         }
       ]
     },
@@ -225,6 +252,15 @@ var LIUZHANGWANG_DATA = {
           "amount": "总中标金额126.56万元", "date": "2026-10",
           "detail": "雨污水管网改造工程建设管理费服务项目中标（成交）。",
           "source": "中国政府采购网", "url": "http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202610/t20261009_27450036.htm"
+        },
+        {
+          "name": "翼城县城市地下管网建设改造项目（二期）一标段",
+          "province": "山西省", "city": "临汾·翼城",
+          "status": "中标候选人公示（2026-10-29~10-31）",
+          "companyRole": "中标候选人（第一名）", "company": "山西一建集团有限公司",
+          "amount": "约2344万元（23440099.86元）", "date": "2026-10",
+          "detail": "城市地下管网建设改造项目（二期）一标段施工，工期6个月（180日历天），完善县城地下管网体系。",
+          "source": "山西省公共资源交易平台（临汾）", "url": "http://lfggzyjy.linfen.gov.cn/moreInfoController.do?getResultNoticeDetail&url=/gcjs/gcjsWinNotice/form%3Fid%3D&id=7e124be1711140b9adba10440e03119b"
         }
       ]
     },
@@ -268,6 +304,15 @@ var LIUZHANGWANG_DATA = {
           "amount": "", "date": "2026-10",
           "detail": "甘肃国际物流国家物流枢纽皋兰公铁物流园提升改造，含4#5#铁路专用线货场及园区配套设施维修提升。",
           "source": "甘肃经济信息网", "url": "https://www.gsei.com.cn/html/1337/2026-10-10/content-707191.html"
+        },
+        {
+          "name": "昆明商贸服务型国家物流枢纽·多式联运国际集结中心项目",
+          "province": "云南省", "city": "昆明",
+          "status": "已开工（2026-07开工）",
+          "companyRole": "项目主体", "company": "昆明市政府口岸物流办统筹",
+          "amount": "", "date": "2026-10",
+          "detail": "依托中老铁路、中越通道构建公铁高效衔接跨境链条，成为国内腹地与海外市场货物流转的重要节点。",
+          "source": "交通运输部", "url": "https://www.mot.gov.cn/xinwen/jiaotongyaowen/202610/t20261030_4226921.html"
         }
       ]
     }
