@@ -48,7 +48,9 @@ def commit_and_push(key):
         ['git', '-c', 'user.name=doomfg', '-c', 'user.email=doomfg@users.noreply.github.com',
          'commit', '-m', 'auto-sync %s' % today],
         cwd=BASE, capture_output=True, text=True)
-    psh = subprocess.run(['git', 'push', url, 'main:main'], cwd=BASE, capture_output=True, text=True)
+    # 强制 HTTP/1.1：GitHub HTTP/2 push 端在本环境会间歇性挂起/超时(读路径正常、写路径无响应)，
+    # http1.1 可稳定推送，避免每日同步 push 失败。
+    psh = subprocess.run(['git', '-c', 'http.version=HTTP/1.1', '-c', 'credential.helper=', 'push', url, 'main:main'], cwd=BASE, capture_output=True, text=True)
     return com, psh
 
 def main():
