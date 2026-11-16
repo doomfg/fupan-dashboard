@@ -15,9 +15,18 @@
   .stat { background:#fff; border-radius:12px; padding:16px; border:1px solid #e5e7eb; }
   .stat .num { font-size:28px; font-weight:700; color:#2563eb; }
   .stat .lbl { font-size:13px; color:#6b7280; margin-top:4px; }
-  .filters { display:flex; flex-wrap:wrap; gap:12px; max-width:1200px; margin:0 auto 16px; align-items:center; background:#fff; padding:14px; border-radius:12px; border:1px solid #e5e7eb; }
+  .stat.highlight { border-color:#fca5a5; background:#fff7f7; }
+  .stat.highlight .num { color:#dc2626; }
+  .filters { display:flex; flex-wrap:wrap; gap:12px; max-width:1200px; margin:0 auto 12px; align-items:center; background:#fff; padding:14px; border-radius:12px; border:1px solid #e5e7eb; }
   .filters select, .filters input { padding:8px 12px; border:1px solid #d1d5db; border-radius:8px; font-size:14px; background:#fff; }
   .filters input { flex:1; min-width:180px; }
+  .batchbar { max-width:1200px; margin:0 auto 16px; display:flex; flex-wrap:wrap; gap:8px; align-items:center; background:#fff; padding:12px 14px; border-radius:12px; border:1px solid #e5e7eb; }
+  .batchbar .blabel { font-size:13px; color:#6b7280; margin-right:2px; }
+  .bchip { padding:6px 12px; border-radius:20px; border:1px solid #d1d5db; background:#fff; font-size:13px; cursor:pointer; color:#374151; transition:.15s; }
+  .bchip b { color:#2563eb; margin-left:2px; }
+  .bchip:hover { border-color:#2563eb; }
+  .bchip.active { background:#2563eb; color:#fff; border-color:#2563eb; }
+  .bchip.active b { color:#fff; }
   #list { max-width:1200px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:16px; }
   .card { background:#fff; border-radius:12px; padding:16px; border:1px solid #e5e7eb; display:flex; flex-direction:column; gap:10px; box-shadow:0 1px 2px rgba(0,0,0,0.04); }
   .card .top { display:flex; justify-content:space-between; align-items:flex-start; gap:8px; }
@@ -29,6 +38,8 @@
   .net-tag-城市地下管网 { background:#fce7f3; color:#be185d; }
   .net-tag-物流网 { background:#e5e7eb; color:#374151; }
   .prov { font-size:12px; background:#eff6ff; color:#2563eb; padding:3px 10px; border-radius:20px; border:1px solid #bfdbfe; }
+  .btag { font-size:11px; padding:2px 8px; border-radius:6px; background:#f3f4f6; color:#6b7280; white-space:nowrap; }
+  .btag.newest { background:#fee2e2; color:#b91c1c; font-weight:600; }
   .card h3 { font-size:16px; line-height:1.4; }
   .meta { font-size:13px; color:#6b7280; display:flex; flex-wrap:wrap; gap:6px 14px; }
   .meta b { color:#111827; font-weight:600; }
@@ -50,12 +61,15 @@
 <div class="stats" id="stats"></div>
 
 <div class="filters">
+  <select id="fBatch"></select>
   <select id="fNet"></select>
   <select id="fProv"></select>
   <select id="fStatus"></select>
   <input id="fSearch" placeholder="🔍 搜索项目/公司名…">
   <span id="count" style="font-size:13px;color:#6b7280;margin-left:auto;"></span>
 </div>
+
+<div class="batchbar" id="batchBar"></div>
 
 <div id="list"></div>
 <div class="foot">数据来源于公开招标公告、政府公文及权威媒体报道；主体类型区分「中标供应商 / 建设单位 / 招标人 / 运营方」。仅供追踪参考。</div>
@@ -73,20 +87,26 @@
   }));
   const provs = [...new Set(all.map(p=>p.province))].sort();
   const stats = [...new Set(all.map(p=>p.status))].sort();
+  const batchDates = [...new Set(all.map(p=>p.batch))].sort().reverse();
+  const latestBatch = batchDates[0] || '';
+  const latestCount = all.filter(p=>p.batch===latestBatch).length;
 
   // 统计
   function renderStats(){
     const provSet = new Set(all.flatMap(p=>p.province.split('/').map(s=>s.trim())));
-    const card = (num,lbl)=>`<div class="stat"><div class="num">${num}</div><div class="lbl">${lbl}</div></div>`;
+    const card = (num,lbl,cls='')=>`<div class="stat ${cls}"><div class="num">${num}</div><div class="lbl">${lbl}</div></div>`;
     document.getElementById('stats').innerHTML =
       card(all.length,'登记项目数')+
       card(provSet.size,'覆盖省份数')+
       card(networks.length,'六张网')+
-      card(all.filter(p=>!/公示/.test(p.status)&&!/中标公告|成交/.test(p.status)).length,'在推进项目数');
+      card(latestCount,`最新批次新增（${latestBatch}）`,'highlight');
   }
 
   // 过滤器
   function initFilters(){
+    const fBatch=document.getElementById('fBatch');
+    fBatch.innerHTML='<option value="">全部批次</option>'+
+      batchDates.map(b=>`<option value="${b}">${b}（新增${all.filter(p=>p.batch===b).length}）</option>`).join('');
     const fNet=document.getElementById('fNet');
     fNet.innerHTML='<option value="">全部领域</option>'+networks.map(n=>`<option>${n.name}</option>`).join('');
     const fProv=document.getElementById('fProv');
@@ -95,15 +115,26 @@
     fStatus.innerHTML='<option value="">全部状态</option>'+stats.map(s=>`<option>${s}</option>`).join('');
   }
 
+  function renderBatchBar(){
+    const cur=document.getElementById('fBatch').value;
+    document.getElementById('batchBar').innerHTML =
+      '<span class="blabel">各批次新增：</span>'+
+      batchDates.map(b=>{
+        const c=all.filter(p=>p.batch===b).length;
+        return `<button class="bchip ${cur===b?'active':''}" data-b="${b}">${b} <b>+${c}</b></button>`;
+      }).join('');
+  }
+
   function filtered(){
+    const b=document.getElementById('fBatch').value;
     const n=document.getElementById('fNet').value;
     const pr=document.getElementById('fProv').value;
     const st=document.getElementById('fStatus').value;
     const q=document.getElementById('fSearch').value.trim().toLowerCase();
     return all.filter(p=>
-      (!n||p._net===n)&&(!pr||p.province===pr)&&(!st||p.status===st)&&
+      (!b||p.batch===b)&&(!n||p._net===n)&&(!pr||p.province===pr)&&(!st||p.status===st)&&
       (!q||(p.name+p.company+p.detail).toLowerCase().includes(q))
-    );
+    ).sort((x,y)=>(y.batch||'').localeCompare(x.batch||'')||(y.date||'').localeCompare(x.date||''));
   }
 
   function render(){
@@ -113,10 +144,14 @@
     if(!list.length){ box.innerHTML='<div class="empty">没有符合条件的项目</div>'; return; }
     box.innerHTML=list.map(p=>{
       const src=p.url?`<a href="${p.url}" target="_blank">来源</a>`:'—';
+      const isNew=p.batch===latestBatch;
       return `<div class="card">
         <div class="top">
           <span class="tag net-tag-${p._net}">${p._net}</span>
-          <span class="prov">📍 ${p.province}${p.city?' · '+p.city:''}</span>
+          <div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap;justify-content:flex-end;">
+            <span class="btag ${isNew?'newest':''}">${p.batch} 入库</span>
+            <span class="prov">📍 ${p.province}${p.city?' · '+p.city:''}</span>
+          </div>
         </div>
         <h3>${p.name}</h3>
         <div style="display:flex;gap:8px;align-items:center;">
@@ -133,9 +168,18 @@
     }).join('');
   }
 
-  ['fNet','fProv','fStatus','fSearch'].forEach(id=>document.getElementById(id).addEventListener('change',render));
+  // 批次 chip 点击筛选
+  document.getElementById('batchBar').addEventListener('click',e=>{
+    const btn=e.target.closest('.bchip'); if(!btn) return;
+    const b=btn.dataset.b;
+    const f=document.getElementById('fBatch');
+    f.value=(f.value===b)?'':b;
+    renderBatchBar(); render();
+  });
+
+  ['fBatch','fNet','fProv','fStatus'].forEach(id=>document.getElementById(id).addEventListener('change',()=>{renderBatchBar();render();}));
   document.getElementById('fSearch').addEventListener('input',render);
-  renderStats(); initFilters(); render();
+  renderStats(); initFilters(); renderBatchBar(); render();
 </script>
 </body>
 </html>

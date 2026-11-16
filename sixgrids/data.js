@@ -11,84 +11,129 @@ var LIUZHANGWANG_DATA = {
       "projects": [
         {
           "name": "青海柴达木盆地水资源配置一期工程",
-          "province": "青海省", "city": "海西",
+          "province": "青海省",
+          "city": "海西",
           "status": "在建（预计12月通水）",
-          "companyRole": "建设单位", "company": "青海海西水网建设开发有限公司",
-          "amount": "", "date": "2026-05",
+          "companyRole": "建设单位",
+          "company": "青海海西水网建设开发有限公司",
+          "amount": "",
+          "date": "2026-05",
           "detail": "直径2.2米输水管道，焊接/防腐机器人施工，支撑盐湖产业与能源用水。",
-          "source": "人民日报/水利部", "url": "http://www.mwr.gov.cn/xw/mtzs/rmrb/202605/t20260527_2112321.html"
+          "source": "人民日报/水利部",
+          "url": "http://www.mwr.gov.cn/xw/mtzs/rmrb/202605/t20260527_2112321.html",
+          "batch": "2026-10-23"
         },
         {
           "name": "太浦河后续一期工程",
-          "province": "长三角（苏浙沪）", "city": "太浦河流域",
+          "province": "长三角（苏浙沪）",
+          "city": "太浦河流域",
           "status": "施工准备启动",
-          "companyRole": "建设主管", "company": "水利部太湖流域管理局",
-          "amount": "", "date": "2026-03",
+          "companyRole": "建设主管",
+          "company": "水利部太湖流域管理局",
+          "amount": "",
+          "date": "2026-03",
           "detail": "提高河道行洪能力、改善滨河岸线生态环境。",
-          "source": "水利部", "url": "http://www.mwr.gov.cn/xw/mtzs/rmrb/202605/t20260527_2112321.html"
+          "source": "水利部",
+          "url": "http://www.mwr.gov.cn/xw/mtzs/rmrb/202605/t20260527_2112321.html",
+          "batch": "2026-10-23"
         },
         {
           "name": "镜岭水库",
-          "province": "浙江省", "city": "浙东",
+          "province": "浙江省",
+          "city": "浙东",
           "status": "在建",
-          "companyRole": "建设单位", "company": "",
-          "amount": "累计投资66.11亿元", "date": "2026-03",
+          "companyRole": "建设单位",
+          "company": "",
+          "amount": "累计投资66.11亿元",
+          "date": "2026-03",
           "detail": "大坝主体混凝土浇筑攻坚，属国家水网重大工程。",
-          "source": "水利部", "url": "http://www.mwr.gov.cn/xw/mtzs/rmrb/202605/t20260527_2112321.html"
+          "source": "水利部",
+          "url": "http://www.mwr.gov.cn/xw/mtzs/rmrb/202605/t20260527_2112321.html",
+          "batch": "2026-10-23"
         },
         {
           "name": "准东将军庙兵准供水项目工程总承包",
-          "province": "新疆维吾尔自治区", "city": "准东（昌吉州）",
+          "province": "新疆维吾尔自治区",
+          "city": "准东（昌吉州）",
           "status": "中标候选人公示",
-          "companyRole": "中标候选人（施工+设计联合体）", "company": "福建省水利水电工程局有限公司（施工）+ 新疆兵团勘测设计院集团股份有限公司（设计）",
-          "amount": "约1.099亿元", "date": "2026-10",
+          "companyRole": "中标候选人（施工+设计联合体）",
+          "company": "福建省水利水电工程局有限公司（施工）+ 新疆兵团勘测设计院集团股份有限公司（设计）",
+          "amount": "约1.099亿元",
+          "date": "2026-10",
           "detail": "准东将军庙兵准供水工程总承包，总工期233日历天，计划2026-10-10开工、2027-05-30完工，保障兵团与准东区域供水。",
-          "source": "新疆维吾尔自治区水利厅", "url": "https://slt.xinjiang.gov.cn/xjslt/c114436/202609/fe42d26d58094f10893e0fbbe875bf52.shtml"
+          "source": "新疆维吾尔自治区水利厅",
+          "url": "https://slt.xinjiang.gov.cn/xjslt/c114436/202609/fe42d26d58094f10893e0fbbe875bf52.shtml",
+          "batch": "2026-10-25"
         },
         {
           "name": "黑河象山水库除险加固工程（一标段）",
-          "province": "黑龙江省", "city": "黑河",
+          "province": "黑龙江省",
+          "city": "黑河",
           "status": "中标候选人公示（2026-10-30）",
-          "companyRole": "中标候选人（第一名）", "company": "福建省水利水电工程局有限公司",
-          "amount": "约1.585亿元（158476923.75元）", "date": "2026-10",
+          "companyRole": "中标候选人（第一名）",
+          "company": "福建省水利水电工程局有限公司",
+          "amount": "约1.585亿元（158476923.75元）",
+          "date": "2026-10",
           "detail": "评标于2026-10-30完成并公示（公示期3日），第一中标候选人福建水利水电工程局报价约1.58亿元，保障水库除险加固与供水安全。",
-          "source": "黑龙江省公共资源交易网", "url": "https://ggzyjyw.hlj.gov.cn/jyfwdt/003002/003002001/003002001002/20261030/25d318d7-fcef-4943-8b22-dfca18a4673b.html"
+          "source": "黑龙江省公共资源交易网",
+          "url": "https://ggzyjyw.hlj.gov.cn/jyfwdt/003002/003002001/003002001002/20261030/25d318d7-fcef-4943-8b22-dfca18a4673b.html",
+          "batch": "2026-11-01"
         },
         {
           "name": "2026年度重大水利工程设计变更事项经济技术评价服务项目",
-          "province": "湖南省", "city": "",
+          "province": "湖南省",
+          "city": "",
           "status": "成交公告（2026-11-06）",
-          "companyRole": "中标供应商（第一中标候选人）", "company": "湖南省科宏大坝监测中心有限公司",
-          "amount": "25.213万元（252130元）", "date": "2026-11",
+          "companyRole": "中标供应商（第一中标候选人）",
+          "company": "湖南省科宏大坝监测中心有限公司",
+          "amount": "25.213万元（252130元）",
+          "date": "2026-11",
           "detail": "湖南省水利厅重大水利工程设计变更事项经济技术评价服务竞争性磋商采购，2026-11-03评审结束，科宏大坝监测中心94分居首，预算25.34万元。",
-          "source": "湖南省水利厅", "url": "http://slt.hunan.gov.cn/slt/xxgk/zfcg/202611/t20261106_34096317.html"
+          "source": "湖南省水利厅",
+          "url": "http://slt.hunan.gov.cn/slt/xxgk/zfcg/202611/t20261106_34096317.html",
+          "batch": "2026-11-08"
         },
         {
           "name": "普安县2026年农村供水工程建设项目",
-          "province": "贵州省", "city": "黔西南州·普安",
+          "province": "贵州省",
+          "city": "黔西南州·普安",
           "status": "中标候选人公示（2026-11-03开标）",
-          "companyRole": "第一中标候选人", "company": "贵州隆瑞建设有限公司",
-          "amount": "598.90万元（5989020.08元）", "date": "2026-11",
+          "companyRole": "第一中标候选人",
+          "company": "贵州隆瑞建设有限公司",
+          "amount": "598.90万元（5989020.08元）",
+          "date": "2026-11",
           "detail": "农村供水工程项目，2026-11-03开评标，贵州隆瑞建设报价598.9万元、工期180天，具备水利水电施工总承包贰级资质。",
-          "source": "贵州省公共资源交易云", "url": "https://ggzy.guizhou.gov.cn/tradeInfo/detailHtml?metaId=1277855573118947328"
+          "source": "贵州省公共资源交易云",
+          "url": "https://ggzy.guizhou.gov.cn/tradeInfo/detailHtml?metaId=1277855573118947328",
+          "batch": "2026-11-08"
         },
         {
           "name": "广东韩江榕江练江水系连通后续优化工程",
-          "province": "广东省", "city": "粤东",
+          "province": "广东省",
+          "city": "粤东",
           "status": "通水（2026-11）",
-          "companyRole": "建设单位", "company": "（粤东水资源优化配置工程）",
-          "amount": "", "date": "2026-11",
+          "companyRole": "建设单位",
+          "company": "（粤东水资源优化配置工程）",
+          "amount": "",
+          "date": "2026-11",
           "detail": "三江汇通、清波长流，韩江榕江练江水系连通后续优化工程通水，有效破解粤东地区生活生产缺水难题，属国家水网重大工程。",
-          "source": "人民日报/中国经济网", "url": "http://bgimg.ce.cn/xwzx/gnsz/gdxw/202611/t20261111_3290527.shtml"
+          "source": "人民日报/中国经济网",
+          "url": "http://bgimg.ce.cn/xwzx/gnsz/gdxw/202611/t20261111_3290527.shtml",
+          "batch": "2026-11-15"
         },
         {
           "name": "新疆大石峡水利枢纽工程",
-          "province": "新疆维吾尔自治区", "city": "阿克苏",
+          "province": "新疆维吾尔自治区",
+          "city": "阿克苏",
           "status": "首批机组投产发电（2026）",
-          "companyRole": "建设单位", "company": "",
-          "amount": "", "date": "2026-11",
+          "companyRole": "建设单位",
+          "company": "",
+          "amount": "",
+          "date": "2026-11",
           "detail": "调丰补枯、润泽沃野，大石峡水利枢纽工程首批机组投产发电，加速发挥生态、灌溉、防洪和发电综合效益，属国家水网重大工程。",
-          "source": "人民日报/中国经济网", "url": "http://bgimg.ce.cn/xwzx/gnsz/gdxw/202611/t20261111_3290527.shtml"
+          "source": "人民日报/中国经济网",
+          "url": "http://bgimg.ce.cn/xwzx/gnsz/gdxw/202611/t20261111_3290527.shtml",
+          "batch": "2026-11-15"
         }
       ]
     },
@@ -99,84 +144,129 @@ var LIUZHANGWANG_DATA = {
       "projects": [
         {
           "name": "陕西～河南±800kV特高压直流输电工程",
-          "province": "陕西/河南", "city": "",
+          "province": "陕西/河南",
+          "city": "",
           "status": "设备中标",
-          "companyRole": "中标供应商", "company": "金冠电气（含南阳金冠智能开关）",
-          "amount": "7481.51万元", "date": "2026-07",
+          "companyRole": "中标供应商",
+          "company": "金冠电气（含南阳金冠智能开关）",
+          "amount": "7481.51万元",
+          "date": "2026-07",
           "detail": "避雷器产品一个标包3392万元；输变电避雷器及开关柜2个标包4089.51万元。",
-          "source": "凤凰网/每经", "url": "https://news.ifeng.com/c/8ut88J4Q5nP"
+          "source": "凤凰网/每经",
+          "url": "https://news.ifeng.com/c/8ut88J4Q5nP",
+          "batch": "2026-10-23"
         },
         {
           "name": "国家电网2026年特高压项目（换流阀等设备）",
-          "province": "全国（跨区）", "city": "",
+          "province": "全国（跨区）",
+          "city": "",
           "status": "设备中标",
-          "companyRole": "中标供应商", "company": "许继电气",
-          "amount": "约12.45亿元", "date": "2026-07",
+          "companyRole": "中标供应商",
+          "company": "许继电气",
+          "amount": "约12.45亿元",
+          "date": "2026-07",
           "detail": "含换流阀11.28亿元、测量装置9613.71万元、开关柜1881万元、二次设备247.14万元。",
-          "source": "腾讯新闻", "url": "https://news.qq.com/rain/a/20260722A0CTX2"
+          "source": "腾讯新闻",
+          "url": "https://news.qq.com/rain/a/20260722A0CTX2",
+          "batch": "2026-10-23"
         },
         {
           "name": "藏东南至粤港澳大湾区±800kV特高压直流输电工程",
-          "province": "西藏→粤港澳大湾区", "city": "",
+          "province": "西藏→粤港澳大湾区",
+          "city": "",
           "status": "设备中标",
-          "companyRole": "中标供应商", "company": "神马电力",
-          "amount": "3750.38万元", "date": "2026-06",
+          "companyRole": "中标供应商",
+          "company": "神马电力",
+          "amount": "3750.38万元",
+          "date": "2026-06",
           "detail": "支柱绝缘子分标中最大标包。",
-          "source": "人民财讯", "url": "https://egs.stcn.com/news/detail/2301787.html"
+          "source": "人民财讯",
+          "url": "https://egs.stcn.com/news/detail/2301787.html",
+          "batch": "2026-10-23"
         },
         {
           "name": "国网2026年输变电/特高压设备采购",
-          "province": "全国", "city": "",
+          "province": "全国",
+          "city": "",
           "status": "设备中标",
-          "companyRole": "中标供应商", "company": "平高电气",
-          "amount": "约18.18亿元", "date": "2026-07",
+          "companyRole": "中标供应商",
+          "company": "平高电气",
+          "amount": "约18.18亿元",
+          "date": "2026-07",
           "detail": "含子公司、合营公司，约占2025年营收14.53%。",
-          "source": "腾讯新闻", "url": "https://news.qq.com/rain/a/20260721A09KYP"
+          "source": "腾讯新闻",
+          "url": "https://news.qq.com/rain/a/20260721A09KYP",
+          "batch": "2026-10-23"
         },
         {
           "name": "国家电网2026年输变电项目第四次招标（电缆/导地线）",
-          "province": "全国", "city": "",
+          "province": "全国",
+          "city": "",
           "status": "中标公示",
-          "companyRole": "中标供应商", "company": "汉缆股份（青岛汉缆及子公司焦作汉河电缆）",
-          "amount": "约6.34亿元", "date": "2026-09",
+          "companyRole": "中标供应商",
+          "company": "汉缆股份（青岛汉缆及子公司焦作汉河电缆）",
+          "amount": "约6.34亿元",
+          "date": "2026-09",
           "detail": "变电设备（含电缆）电缆及附件5个包+导地线4个包；子公司焦作汉河电缆另中标2个包，约占2025年营收6.09%。",
-          "source": "新浪财经", "url": "https://finance.sina.com.cn/stock/aigc/zdht/2026-09-08/doc-inircews9272508.shtml"
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/aigc/zdht/2026-09-08/doc-inircews9272508.shtml",
+          "batch": "2026-10-25"
         },
         {
           "name": "攀西特高压变电站新建工程（1000kV现场组装变压器）",
-          "province": "四川省·攀西", "city": "",
+          "province": "四川省·攀西",
+          "city": "",
           "status": "设备中标（2026-09-29公告）",
-          "companyRole": "中标供应商", "company": "保变电气",
-          "amount": "", "date": "2026-09",
+          "companyRole": "中标供应商",
+          "company": "保变电气",
+          "amount": "",
+          "date": "2026-09",
           "detail": "国家电网2026年特高压项目第四次设备公开招标，保变电气中标攀西特高压变电站新建工程10台1000千伏特高压现场组装变压器供货。",
-          "source": "机经网（中国机械工业联合会）", "url": "https://www.mei.net.cn/dgdq/202610/639695508205508501.html"
+          "source": "机经网（中国机械工业联合会）",
+          "url": "https://www.mei.net.cn/dgdq/202610/639695508205508501.html",
+          "batch": "2026-11-01"
         },
         {
           "name": "国家电网2026年输变电项目第五次装置性材料和特高压项目第五次材料招标",
-          "province": "全国", "city": "",
+          "province": "全国",
+          "city": "",
           "status": "中标（2026-11-03）",
-          "companyRole": "中标供应商", "company": "中国能建江苏装备公司",
-          "amount": "17800吨角钢塔和变电构支架", "date": "2026-11",
+          "companyRole": "中标供应商",
+          "company": "中国能建江苏装备公司",
+          "amount": "17800吨角钢塔和变电构支架",
+          "date": "2026-11",
           "detail": "中标国网输变电第五次装置性材料+特高压第五次材料公开招标合计17800吨角钢塔和变电构支架，重点项目为陕西—河南±800千伏特高压直流线路新建工程（榆林↔开封杞县）。",
-          "source": "中国能源建设股份有限公司", "url": "https://www.ceec.net.cn/art/2026/11/6/art_11019_2540853.html"
+          "source": "中国能源建设股份有限公司",
+          "url": "https://www.ceec.net.cn/art/2026/11/6/art_11019_2540853.html",
+          "batch": "2026-11-08"
         },
         {
           "name": "国家电网2026年输变电第五次装置性材料+特高压第五次材料采购（宏盛华源）",
-          "province": "全国", "city": "",
+          "province": "全国",
+          "city": "",
           "status": "产品中标公告（2026-11-05）",
-          "companyRole": "中标供应商", "company": "宏盛华源下属子公司",
-          "amount": "约7.25亿元（26个标包）", "date": "2026-11",
+          "companyRole": "中标供应商",
+          "company": "宏盛华源下属子公司",
+          "amount": "约7.25亿元（26个标包）",
+          "date": "2026-11",
           "detail": "中标国家电网2026年输变电项目第五次装置性材料（角钢塔16包、钢管塔5包）及特高压项目第五次材料（角钢塔5包）共26个标包，约占公司2025年经审计营收7.57%。",
-          "source": "证券日报/东方财富网", "url": "https://finance.eastmoney.com/a/202611053923822021.html"
+          "source": "证券日报/东方财富网",
+          "url": "https://finance.eastmoney.com/a/202611053923822021.html",
+          "batch": "2026-11-15"
         },
         {
           "name": "国家电网2026年输变电第五次变电设备采购（长高电气）",
-          "province": "全国", "city": "",
+          "province": "全国",
+          "city": "",
           "status": "中标公告（2026-11-04）",
-          "companyRole": "中标供应商（4家子公司）", "company": "长高电气集团股份公司（湖南长高电气/长高高压开关/长高成套电器/长高森源电力）",
-          "amount": "合计约2.30亿元（23041.31万元）", "date": "2026-11",
+          "companyRole": "中标供应商（4家子公司）",
+          "company": "长高电气集团股份公司（湖南长高电气/长高高压开关/长高成套电器/长高森源电力）",
+          "amount": "合计约2.30亿元（23041.31万元）",
+          "date": "2026-11",
           "detail": "四家全资子公司分别中标组合电器、隔离开关、开关柜等品类，合计占公司2025年经审计合并营收13.84%。",
-          "source": "新浪财经", "url": "https://finance.sina.com.cn/stock/aigc/zdht/2026-11-04/doc-inixpmfi8234291.shtml"
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/aigc/zdht/2026-11-04/doc-inixpmfi8234291.shtml",
+          "batch": "2026-11-15"
         }
       ]
     },
@@ -187,84 +277,129 @@ var LIUZHANGWANG_DATA = {
       "projects": [
         {
           "name": "河北一体化算力网·廊坊两大数据中心",
-          "province": "河北省", "city": "廊坊",
+          "province": "河北省",
+          "city": "廊坊",
           "status": "启动实施",
-          "companyRole": "运营方", "company": "万国数据",
-          "amount": "", "date": "2026-09",
+          "companyRole": "运营方",
+          "company": "万国数据",
+          "amount": "",
+          "date": "2026-09",
           "detail": "提升京津冀算力供给，年均PUE降至1.21，国家级绿色数据中心。",
-          "source": "中国财经网/算力大会", "url": "https://www.cfen.com.cn/cy/cyqygc/202609/t20260916_914394.html"
+          "source": "中国财经网/算力大会",
+          "url": "https://www.cfen.com.cn/cy/cyqygc/202609/t20260916_914394.html",
+          "batch": "2026-10-23"
         },
         {
           "name": "京东云河南鹤壁数据中心（一期）",
-          "province": "河南省", "city": "鹤壁",
+          "province": "河南省",
+          "city": "鹤壁",
           "status": "2026年正式投运",
-          "companyRole": "运营方", "company": "京东云",
-          "amount": "", "date": "2026",
+          "companyRole": "运营方",
+          "company": "京东云",
+          "amount": "",
+          "date": "2026",
           "detail": "50P通用算力，服务华中智能供应链与物流调度。",
-          "source": "知乎专栏盘点", "url": "https://zhuanlan.zhihu.com/p/1996896252198155236"
+          "source": "知乎专栏盘点",
+          "url": "https://zhuanlan.zhihu.com/p/1996896252198155236",
+          "batch": "2026-10-23"
         },
         {
           "name": "百度智能云山西阳泉飞桨智算中心（二期扩容）",
-          "province": "山西省", "city": "阳泉",
+          "province": "山西省",
+          "city": "阳泉",
           "status": "扩容投产",
-          "companyRole": "运营方", "company": "百度智能云",
-          "amount": "", "date": "2026",
+          "companyRole": "运营方",
+          "company": "百度智能云",
+          "amount": "",
+          "date": "2026",
           "detail": "新增80P算力，聚焦自动驾驶仿真与工业视觉质检。",
-          "source": "知乎专栏盘点", "url": "https://zhuanlan.zhihu.com/p/1996896252198155236"
+          "source": "知乎专栏盘点",
+          "url": "https://zhuanlan.zhihu.com/p/1996896252198155236",
+          "batch": "2026-10-23"
         },
         {
           "name": "中国算力平台（贵州）",
-          "province": "贵州省", "city": "",
+          "province": "贵州省",
+          "city": "",
           "status": "建成上线",
-          "companyRole": "平台接入方", "company": "贵州省通信管理局牵头（华为云等参与直连）",
-          "amount": "", "date": "2026-06",
+          "companyRole": "平台接入方",
+          "company": "贵州省通信管理局牵头（华为云等参与直连）",
+          "amount": "",
+          "date": "2026-06",
           "detail": "2026年全国首批接入省份，实现算力数据自动化采集上报。",
-          "source": "贵州发改委", "url": "https://drc.guizhou.gov.cn/xwzx/zwyw/202606/t20260624_90549693.html"
+          "source": "贵州发改委",
+          "url": "https://drc.guizhou.gov.cn/xwzx/zwyw/202606/t20260624_90549693.html",
+          "batch": "2026-10-23"
         },
         {
           "name": "粤港澳大湾区电算协同一体化智算中心算力基础设施项目（一期）",
-          "province": "广东省", "city": "粤港澳大湾区",
+          "province": "广东省",
+          "city": "粤港澳大湾区",
           "status": "获项目备案（2026-10-15）",
-          "companyRole": "建设单位", "company": "广东舜通大数据产业有限公司",
-          "amount": "总投资24.75亿元", "date": "2026-10",
+          "companyRole": "建设单位",
+          "company": "广东舜通大数据产业有限公司",
+          "amount": "总投资24.75亿元",
+          "date": "2026-10",
           "detail": "建设算力中心、动力中心、运维楼及配套设施，IT负荷82.5MW（3.3万标准机架），起止年限2026-10至2028-06。",
-          "source": "网易（云头条）", "url": "https://www.163.com/dy/article/L9A4R0QE0511D6RL.html"
+          "source": "网易（云头条）",
+          "url": "https://www.163.com/dy/article/L9A4R0QE0511D6RL.html",
+          "batch": "2026-10-25"
         },
         {
           "name": "中国移动2026-2027年新一代人工智能超节点设备集中采购",
-          "province": "全国", "city": "",
+          "province": "全国",
+          "city": "",
           "status": "中标候选人公示（2026-10-28）",
-          "companyRole": "中标供应商（5家）", "company": "四川华鲲振宇（117.02亿元/6144卡）、宝德计算机（115.99亿/5120卡）、浙江华启智慧（116.38亿/4096卡）、百信信息、北京神州鲲泰",
-          "amount": "投标报价最高117.02亿元", "date": "2026-10",
+          "companyRole": "中标供应商（5家）",
+          "company": "四川华鲲振宇（117.02亿元/6144卡）、宝德计算机（115.99亿/5120卡）、浙江华启智慧（116.38亿/4096卡）、百信信息、北京神州鲲泰",
+          "amount": "投标报价最高117.02亿元",
+          "date": "2026-10",
           "detail": "合计采购人工智能超节点20480卡及配套RoCE交换机448台、存储82套，支撑运营商算力基础设施扩容。",
-          "source": "新浪财经（上证报）", "url": "https://finance.sina.com.cn/roll/2026-10-29/doc-iniwwpnu6095322.shtml"
+          "source": "新浪财经（上证报）",
+          "url": "https://finance.sina.com.cn/roll/2026-10-29/doc-iniwwpnu6095322.shtml",
+          "batch": "2026-11-01"
         },
         {
           "name": "萧山经开区双万卡级算力集群项目",
-          "province": "浙江省", "city": "杭州·萧山",
+          "province": "浙江省",
+          "city": "杭州·萧山",
           "status": "落地（2026-08-24），一期2026年11月前交付",
-          "companyRole": "共建合资公司（运营方）", "company": "萧山经开区国控集团、瀚海智芯、传化集团",
-          "amount": "总投资约160亿元", "date": "2026-08",
+          "companyRole": "共建合资公司（运营方）",
+          "company": "萧山经开区国控集团、瀚海智芯、传化集团",
+          "amount": "总投资约160亿元",
+          "date": "2026-08",
           "detail": "两个万卡规模算力集群，配套两个独立机房与高性能加速服务器；一期2026年11月前完成、二期2027年3月完成，交付后提供五年算力服务，重点面向AI大数据模型企业。",
-          "source": "观点网/萧山区政府", "url": "https://www.guandian.cn/m/show/590854"
+          "source": "观点网/萧山区政府",
+          "url": "https://www.guandian.cn/m/show/590854",
+          "batch": "2026-11-08"
         },
         {
           "name": "华中算力枢纽·鄂州银商云数据中心",
-          "province": "湖北省", "city": "鄂州·红莲湖",
+          "province": "湖北省",
+          "city": "鄂州·红莲湖",
           "status": "冲刺交付（预计2026-11底）",
-          "companyRole": "建设/运营方", "company": "银商云",
-          "amount": "总投资9.9亿元", "date": "2026-11",
+          "companyRole": "建设/运营方",
+          "company": "银商云",
+          "amount": "总投资9.9亿元",
+          "date": "2026-11",
           "detail": "国家A级高等级绿色数据中心，2026-11-11现场冲刺收尾，预计11月底交付，承载金融、互联网及政企核心算力，为鄂州'光芯屏端网'产业集群提供算力支撑。",
-          "source": "华容区政府门户网站", "url": "https://www.hbhr.gov.cn/zxzx/jcsm/202511/t20251112_733254.html"
+          "source": "华容区政府门户网站",
+          "url": "https://www.hbhr.gov.cn/zxzx/jcsm/202511/t20251112_733254.html",
+          "batch": "2026-11-15"
         },
         {
           "name": "山东鲁南超算中心",
-          "province": "山东省", "city": "鲁南",
+          "province": "山东省",
+          "city": "鲁南",
           "status": "建设中（预计11月中下旬启用）",
-          "companyRole": "运营方", "company": "",
-          "amount": "", "date": "2026-11",
+          "companyRole": "运营方",
+          "company": "",
+          "amount": "",
+          "date": "2026-11",
           "detail": "采用水冷散热方案，建成后整体可提供2000P（FP16）智算规模，搭配1.2P（FP32）通算算力，预计11月中下旬正式启用。",
-          "source": "新浪财经头条", "url": "https://cj.sina.com.cn/articles/view/2214838982/8403c2c604001n10a"
+          "source": "新浪财经头条",
+          "url": "https://cj.sina.com.cn/articles/view/2214838982/8403c2c604001n10a",
+          "batch": "2026-11-15"
         }
       ]
     },
@@ -275,48 +410,73 @@ var LIUZHANGWANG_DATA = {
       "projects": [
         {
           "name": "中国电信海南公司5G机卡绑定功能建设工程（软件采购）",
-          "province": "海南省", "city": "",
+          "province": "海南省",
+          "city": "",
           "status": "直接采购成交",
-          "companyRole": "中标供应商", "company": "中兴通讯",
-          "amount": "", "date": "2026-08",
+          "companyRole": "中标供应商",
+          "company": "中兴通讯",
+          "amount": "",
+          "date": "2026-08",
           "detail": "采购方：中国电信海南分公司，直接采购公示。",
-          "source": "证券之星/天眼查", "url": "https://stock.stockstar.com/RB2026080600018372.shtml"
+          "source": "证券之星/天眼查",
+          "url": "https://stock.stockstar.com/RB2026080600018372.shtml",
+          "batch": "2026-10-23"
         },
         {
           "name": "2026年度第十二批电信普遍服务项目",
-          "province": "全国（多省）", "city": "",
+          "province": "全国（多省）",
+          "city": "",
           "status": "中标结果公告",
-          "companyRole": "采购方", "company": "（详见公告）",
-          "amount": "", "date": "2026-07",
+          "companyRole": "采购方",
+          "company": "（详见公告）",
+          "amount": "",
+          "date": "2026-07",
           "detail": "电信普遍服务，覆盖农村及偏远地区通信建设。",
-          "source": "中国政府采购网", "url": "http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202607/t20260703_26868284.htm"
+          "source": "中国政府采购网",
+          "url": "http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202607/t20260703_26868284.htm",
+          "batch": "2026-10-23"
         },
         {
           "name": "中国移动黑龙江2026-2027年无线网多载频功放基站放大拉远系统采购",
-          "province": "黑龙江省", "city": "",
+          "province": "黑龙江省",
+          "city": "",
           "status": "中标候选人公示（2026-09-24）",
-          "companyRole": "中标供应商", "company": "京信网络（70%份额）、中信科移动（20%）、中国移动紫金（江苏）创新研究院（10%）",
-          "amount": "京信网络约2775.34万元（含税预算3405.75万元）", "date": "2026-09",
+          "companyRole": "中标供应商",
+          "company": "京信网络（70%份额）、中信科移动（20%）、中国移动紫金（江苏）创新研究院（10%）",
+          "amount": "京信网络约2775.34万元（含税预算3405.75万元）",
+          "date": "2026-09",
           "detail": "采购1260套（5G一体化822套、分布式438套）多载频功放基站放大拉远系统，京信网络连续两年居首。",
-          "source": "新浪财经", "url": "https://finance.sina.com.cn/wm/2026-10-13/doc-inivasea0537256.shtml"
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/wm/2026-10-13/doc-inivasea0537256.shtml",
+          "batch": "2026-10-25"
         },
         {
           "name": "中国电信2026年5G物联网省管工程直接采购",
-          "province": "全国（广东、江苏等16省）", "city": "",
+          "province": "全国（广东、江苏等16省）",
+          "city": "",
           "status": "直接采购公示（2026-11-06）",
-          "companyRole": "直接采购供应商", "company": "华为技术有限公司及华为技术服务有限公司联合体、中兴通讯股份有限公司",
-          "amount": "", "date": "2026-11",
+          "companyRole": "直接采购供应商",
+          "company": "华为技术有限公司及华为技术服务有限公司联合体、中兴通讯股份有限公司",
+          "amount": "",
+          "date": "2026-11",
           "detail": "对广东、江苏等16个省份2B SMF、2B UPF网元进行扩容，满足5G物联网省管工程配套要求（公示期2026-11-09~11-11）。",
-          "source": "证券之星/企查查（中国电信阳光采购网）", "url": "https://4g.stockstar.com/detail/RB2026110600038996"
+          "source": "证券之星/企查查（中国电信阳光采购网）",
+          "url": "https://4g.stockstar.com/detail/RB2026110600038996",
+          "batch": "2026-11-08"
         },
         {
           "name": "郑州市金岱产业集聚区智能基础设施建设（一期）项目",
-          "province": "河南省", "city": "郑州·管城区",
+          "province": "河南省",
+          "city": "郑州·管城区",
           "status": "中标公告（2026-11-10评审）",
-          "companyRole": "中标供应商", "company": "中国联合网络通信有限公司郑州市分公司",
-          "amount": "1898.30万元（18982964.36元）", "date": "2026-11",
+          "companyRole": "中标供应商",
+          "company": "中国联合网络通信有限公司郑州市分公司",
+          "amount": "1898.30万元（18982964.36元）",
+          "date": "2026-11",
           "detail": "采购5G宏基站建设、5G室内分布系统建设、统一智能运维系统建设及系统集成，交货期合同签订后90日历天，评审2026-11-10。",
-          "source": "郑州市公共资源交易中心", "url": "http://zzggzy.zhengzhou.gov.cn/zfcg/005003/20261111/f04b9df6-586b-4797-9bcc-f668484b130a.html"
+          "source": "郑州市公共资源交易中心",
+          "url": "http://zzggzy.zhengzhou.gov.cn/zfcg/005003/20261111/f04b9df6-586b-4797-9bcc-f668484b130a.html",
+          "batch": "2026-11-15"
         }
       ]
     },
@@ -327,48 +487,73 @@ var LIUZHANGWANG_DATA = {
       "projects": [
         {
           "name": "城市地下管网管廊及市政基础设施设备更新（2026实施情况评估）",
-          "province": "全国", "city": "",
+          "province": "全国",
+          "city": "",
           "status": "中标",
-          "companyRole": "中标供应商", "company": "北京城建设计发展集团等联合体",
-          "amount": "220万元", "date": "2026-04",
+          "companyRole": "中标供应商",
+          "company": "北京城建设计发展集团等联合体",
+          "amount": "220万元",
+          "date": "2026-04",
           "detail": "住建部牵头项目，联合体含中国城市建设研究院、北京建筑大学。",
-          "source": "中国政府采购网", "url": "http://www.ccgp.gov.cn/cggg/zygg/zbgg/202604/t20260420_26428587.htm"
+          "source": "中国政府采购网",
+          "url": "http://www.ccgp.gov.cn/cggg/zygg/zbgg/202604/t20260420_26428587.htm",
+          "batch": "2026-10-23"
         },
         {
           "name": "淮北市城市地下管网和综合管廊建设改造实施方案修编",
-          "province": "安徽省", "city": "淮北",
+          "province": "安徽省",
+          "city": "淮北",
           "status": "成交",
-          "companyRole": "采购方", "company": "（方案修编服务项目）",
-          "amount": "", "date": "2026",
+          "companyRole": "采购方",
+          "company": "（方案修编服务项目）",
+          "amount": "",
+          "date": "2026",
           "detail": "城市地下管网管廊“两重”建设项目支撑。",
-          "source": "淮北住建局", "url": "https://hbzjj.huaibei.gov.cn/xwzx/tzgg/58053777.html"
+          "source": "淮北住建局",
+          "url": "https://hbzjj.huaibei.gov.cn/xwzx/tzgg/58053777.html",
+          "batch": "2026-10-23"
         },
         {
           "name": "江山经开区江东新区地下管网及综合管廊工程（聚兴侧挡土墙及便道）",
-          "province": "浙江省", "city": "衢州·江山",
+          "province": "浙江省",
+          "city": "衢州·江山",
           "status": "中标结果公告",
-          "companyRole": "招标人", "company": "江山市联兴发展有限公司",
-          "amount": "", "date": "2026-06",
+          "companyRole": "招标人",
+          "company": "江山市联兴发展有限公司",
+          "amount": "",
+          "date": "2026-06",
           "detail": "基础设施配套及有机更新项目子项。",
-          "source": "衢州市公共资源交易系统", "url": "https://ggzy.qz.gov.cn/col/col1229683630/art/2026/art_9caec4146c344c5e84b3ef397a65ea64.html"
+          "source": "衢州市公共资源交易系统",
+          "url": "https://ggzy.qz.gov.cn/col/col1229683630/art/2026/art_9caec4146c344c5e84b3ef397a65ea64.html",
+          "batch": "2026-10-23"
         },
         {
           "name": "2026年西渡街道雨污水管网改造工程（建设管理费）",
-          "province": "上海市", "city": "奉贤区·西渡",
+          "province": "上海市",
+          "city": "奉贤区·西渡",
           "status": "中标（成交）公告",
-          "companyRole": "采购单位", "company": "上海市奉贤区西渡街道城市建设管理事务中心",
-          "amount": "总中标金额126.56万元", "date": "2026-10",
+          "companyRole": "采购单位",
+          "company": "上海市奉贤区西渡街道城市建设管理事务中心",
+          "amount": "总中标金额126.56万元",
+          "date": "2026-10",
           "detail": "雨污水管网改造工程建设管理费服务项目中标（成交）。",
-          "source": "中国政府采购网", "url": "http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202610/t20261009_27450036.htm"
+          "source": "中国政府采购网",
+          "url": "http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202610/t20261009_27450036.htm",
+          "batch": "2026-10-25"
         },
         {
           "name": "翼城县城市地下管网建设改造项目（二期）一标段",
-          "province": "山西省", "city": "临汾·翼城",
+          "province": "山西省",
+          "city": "临汾·翼城",
           "status": "中标候选人公示（2026-10-29~10-31）",
-          "companyRole": "中标候选人（第一名）", "company": "山西一建集团有限公司",
-          "amount": "约2344万元（23440099.86元）", "date": "2026-10",
+          "companyRole": "中标候选人（第一名）",
+          "company": "山西一建集团有限公司",
+          "amount": "约2344万元（23440099.86元）",
+          "date": "2026-10",
           "detail": "城市地下管网建设改造项目（二期）一标段施工，工期6个月（180日历天），完善县城地下管网体系。",
-          "source": "山西省公共资源交易平台（临汾）", "url": "http://lfggzyjy.linfen.gov.cn/moreInfoController.do?getResultNoticeDetail&url=/gcjs/gcjsWinNotice/form%3Fid%3D&id=7e124be1711140b9adba10440e03119b"
+          "source": "山西省公共资源交易平台（临汾）",
+          "url": "http://lfggzyjy.linfen.gov.cn/moreInfoController.do?getResultNoticeDetail&url=/gcjs/gcjsWinNotice/form%3Fid%3D&id=7e124be1711140b9adba10440e03119b",
+          "batch": "2026-11-01"
         }
       ]
     },
@@ -379,59 +564,111 @@ var LIUZHANGWANG_DATA = {
       "projects": [
         {
           "name": "重庆长寿生产服务型国家物流枢纽·液体货物铁路分拨中心",
-          "province": "重庆市", "city": "长寿",
+          "province": "重庆市",
+          "city": "长寿",
           "status": "监理中标公示",
-          "companyRole": "项目主体", "company": "",
-          "amount": "", "date": "2026-06",
+          "companyRole": "项目主体",
+          "company": "",
+          "amount": "",
+          "date": "2026-06",
           "detail": "生产服务型国家物流枢纽配套工程。",
-          "source": "重庆市公共资源交易监督网", "url": "https://ggzyjyjgj.cq.gov.cn/xmxx/002009/20260629/d3b9b3e5-183f-4a9e-8d93-68ec4f6e4535.html"
+          "source": "重庆市公共资源交易监督网",
+          "url": "https://ggzyjyjgj.cq.gov.cn/xmxx/002009/20260629/d3b9b3e5-183f-4a9e-8d93-68ec4f6e4535.html",
+          "batch": "2026-10-23"
         },
         {
           "name": "成都国际铁路港国家物流枢纽项目（一期）二标段",
-          "province": "四川省", "city": "成都·青白江",
+          "province": "四川省",
+          "city": "成都·青白江",
           "status": "中标候选人公示",
-          "companyRole": "招标人", "company": "成都陆港大仓贸易有限公司",
-          "amount": "", "date": "2026-08",
+          "companyRole": "招标人",
+          "company": "成都陆港大仓贸易有限公司",
+          "amount": "",
+          "date": "2026-08",
           "detail": "国际铁路港国家物流枢纽工程。",
-          "source": "四川公共资源交易网", "url": "https://ggzyjy.sc.gov.cn/jyxx/002001/002001006/20260807/ba7a3dfc-45f6-4fe8-846a-3c776e1808de.html"
+          "source": "四川公共资源交易网",
+          "url": "https://ggzyjy.sc.gov.cn/jyxx/002001/002001006/20260807/ba7a3dfc-45f6-4fe8-846a-3c776e1808de.html",
+          "batch": "2026-10-23"
         },
         {
           "name": "天津空港型国家物流枢纽·航空物流区职工配套服务中心（EPC弱电智能化分包）",
-          "province": "天津市", "city": "",
+          "province": "天津市",
+          "city": "",
           "status": "EPC中标",
-          "companyRole": "中标分包方", "company": "中建一局华北公司",
-          "amount": "", "date": "2026-10",
+          "companyRole": "中标分包方",
+          "company": "中建一局华北公司",
+          "amount": "",
+          "date": "2026-10",
           "detail": "弱电智能化专业分包工程中标。",
-          "source": "招标网", "url": "https://zb.zhaobiao.cn/succeed_v_29db0a5120bec1a8612fd3610b742121.html"
+          "source": "招标网",
+          "url": "https://zb.zhaobiao.cn/succeed_v_29db0a5120bec1a8612fd3610b742121.html",
+          "batch": "2026-10-23"
         },
         {
           "name": "甘肃国际物流国家物流枢纽皋兰公铁物流园提升改造项目（4#5#铁路专用线货场及配套设施）",
-          "province": "甘肃省", "city": "兰州·皋兰",
+          "province": "甘肃省",
+          "city": "兰州·皋兰",
           "status": "中标公示（2026-10-10）",
-          "companyRole": "招标人", "company": "甘肃省物产集团皋兰物流园有限公司",
-          "amount": "", "date": "2026-10",
+          "companyRole": "招标人",
+          "company": "甘肃省物产集团皋兰物流园有限公司",
+          "amount": "",
+          "date": "2026-10",
           "detail": "甘肃国际物流国家物流枢纽皋兰公铁物流园提升改造，含4#5#铁路专用线货场及园区配套设施维修提升。",
-          "source": "甘肃经济信息网", "url": "https://www.gsei.com.cn/html/1337/2026-10-10/content-707191.html"
+          "source": "甘肃经济信息网",
+          "url": "https://www.gsei.com.cn/html/1337/2026-10-10/content-707191.html",
+          "batch": "2026-10-25"
         },
         {
           "name": "昆明商贸服务型国家物流枢纽·多式联运国际集结中心项目",
-          "province": "云南省", "city": "昆明",
+          "province": "云南省",
+          "city": "昆明",
           "status": "已开工（2026-07开工）",
-          "companyRole": "项目主体", "company": "昆明市政府口岸物流办统筹",
-          "amount": "", "date": "2026-10",
+          "companyRole": "项目主体",
+          "company": "昆明市政府口岸物流办统筹",
+          "amount": "",
+          "date": "2026-10",
           "detail": "依托中老铁路、中越通道构建公铁高效衔接跨境链条，成为国内腹地与海外市场货物流转的重要节点。",
-          "source": "交通运输部", "url": "https://www.mot.gov.cn/xinwen/jiaotongyaowen/202610/t20261030_4226921.html"
+          "source": "交通运输部",
+          "url": "https://www.mot.gov.cn/xinwen/jiaotongyaowen/202610/t20261030_4226921.html",
+          "batch": "2026-11-01"
         },
         {
           "name": "东南高铁物流基地项目",
-          "province": "福建省", "city": "厦门",
+          "province": "福建省",
+          "city": "厦门",
           "status": "开工（2026-10-29）",
-          "companyRole": "建设单位", "company": "（厦门国际物流港二期）",
-          "amount": "总投资约9.72亿元（不含自动化设备及配套铁路线）", "date": "2026-10",
+          "companyRole": "建设单位",
+          "company": "（厦门国际物流港二期）",
+          "amount": "总投资约9.72亿元（不含自动化设备及配套铁路线）",
+          "date": "2026-10",
           "detail": "规划占地33.16万㎡、总建筑面积约18万㎡，建成高标准专业化高铁物流基地，与国际物流港一期联动形成普铁、高铁并站综合型物流基地，服务厦门国家物流枢纽建设。",
-          "source": "新浪财经", "url": "https://finance.sina.com.cn/jjxw/2026-10-30/doc-iniwzazv4616150.shtml"
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/jjxw/2026-10-30/doc-iniwzazv4616150.shtml",
+          "batch": "2026-11-15"
         }
       ]
+    }
+  ],
+  "batches": [
+    {
+      "date": "2026-10-23",
+      "count": 19
+    },
+    {
+      "date": "2026-10-25",
+      "count": 6
+    },
+    {
+      "date": "2026-11-01",
+      "count": 5
+    },
+    {
+      "date": "2026-11-08",
+      "count": 5
+    },
+    {
+      "date": "2026-11-15",
+      "count": 8
     }
   ]
 };
